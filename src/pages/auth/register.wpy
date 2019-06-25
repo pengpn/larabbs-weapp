@@ -117,11 +117,11 @@
     }
     // 重置注册流程，初始化 data 数据
     resetRegister() {
-        this.captchaModalHidden = true
-        this.phoneDisabled = false
-        this.captcha = {}
-        this.verificationCode = {}
-        this.errors = {}
+      this.captchaModalHidden = true
+      this.phoneDisabled = false
+      this.captcha = {}
+      this.verificationCode = {}
+      this.errors = {}
     }
 
     // 表单提交
@@ -188,13 +188,11 @@
           // 跳转到我的页面
           setTimeout(function() {
             wepy.switchTab({
-              url: '/pages/user'
+              url: '/pages/users/me'
             })
           }, 2000)
         }
-
-
-      } catch(err) {
+      } catch (err) {
         console.log(err)
         wepy.showModal({
           title: '提示',
@@ -326,4 +324,3 @@
     }
   }
 </script>
-

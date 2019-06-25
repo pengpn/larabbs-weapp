@@ -79,7 +79,7 @@
     }
     data = {
       // 用户信息
-      user: null,
+      user: null
     }
     async onShow() {
       // 每次打开页面，获取当前用户信息
